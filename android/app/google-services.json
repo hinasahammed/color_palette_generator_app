@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "837412170562",
+    "project_id": "colorpelette-ea80d",
+    "storage_bucket": "colorpelette-ea80d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837412170562:android:d583cd7c261f08884276db",
+        "android_client_info": {
+          "package_name": "com.example.color_palette_generator_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKuUsm9XQSAjwipHNs99nBcirlEXhOd-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837412170562:android:983cd1df3112a7b04276db",
+        "android_client_info": {
+          "package_name": "com.example.yourappname"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKuUsm9XQSAjwipHNs99nBcirlEXhOd-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
