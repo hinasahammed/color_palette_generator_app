@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: backgroundColor,
       body: Center(
         child: Text("#${widget.code.substring(4)}",
-            style: TextStyle(color: Colors.white, fontSize: 30)),
+            style: const TextStyle(color: Colors.white, fontSize: 30)),
       ),
     );
   }

@@ -2,7 +2,7 @@ import 'package:color_palette_generator_app/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       title: "Random Color Generator",
-      home: MainScreen(),
+      home: const MainScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

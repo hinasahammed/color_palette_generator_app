@@ -37,9 +37,9 @@ class _MainScreenState extends State<MainScreen> {
   void updateScreens() {
     screens = [
       HomeScreen(code: colorCode), // Use the current colorCode
-      SearchScreen(),
-      FavoriteScreen(),
-      AccountScreen(),
+      const SearchScreen(),
+      const FavoriteScreen(),
+      const AccountScreen(),
     ];
   }
 
@@ -50,23 +50,23 @@ class _MainScreenState extends State<MainScreen> {
         child: screens[currentIndex],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Color(0xff212529),
-        child: Icon(
-          Icons.refresh,
-          color: Color(0xffffffff),
-        ),
-        shape: CircleBorder(),
+        backgroundColor: const Color(0xff212529),
+        shape: const CircleBorder(),
         onPressed: () {
           setState(() {
             colorCode = generateCode();
             updateScreens(); // Update screens with the new colorCode
           });
         },
+        child: const Icon(
+          Icons.refresh,
+          color: Color(0xffffffff),
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AnimatedBottomNavigationBar(
         icons: icons,
-        backgroundColor: Color(0xff212529),
+        backgroundColor: const Color(0xff212529),
         activeColor: Colors.white,
         inactiveColor: Colors.white70,
         notchSmoothness: NotchSmoothness.softEdge,
@@ -89,7 +89,6 @@ class _MainScreenState extends State<MainScreen> {
       code += characters[Random().nextInt(characters.length)];
     }
 
-    print(code);
     return "0xff$code"; // Ensure this returns a valid hex string
   }
 }
